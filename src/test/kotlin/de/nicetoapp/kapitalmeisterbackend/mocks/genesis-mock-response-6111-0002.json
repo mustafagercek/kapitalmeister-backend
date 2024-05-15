@@ -1,0 +1,76 @@
+{
+  "Object": {
+    "Content": "GENESIS-Tabelle: 61111-0002\nVerbraucherpreisindex: Deutschland, Monate;;;;\nVerbraucherpreisindex für Deutschland;;;;\nDeutschland;;;;\n;;Verbraucherpreisindex;Veränderung zum Vorjahresmonat;Veränderung zum Vormonat\n;;2020=100;in (%);in (%)\n2020;Januar;99,8;+2,1;-0,2\n2020;Februar;100,1;+2,0;+0,3\n2020;März;100,3;+1,8;+0,2\n2020;April;100,4;+1,0;+0,1\n2020;Mai;100,4;+0,8;-\n2020;Juni;100,5;+0,6;+0,1\n2020;Juli;99,7;-0,6;-0,8\n2020;August;99,7;-0,5;-\n2020;September;99,7;-0,5;-\n2020;Oktober;99,9;-0,3;+0,2\n2020;November;99,7;+0,2;-0,2\n2020;Dezember;99,8;-0,2;+0,1\n2021;Januar;101,0;+1,2;+1,2\n2021;Februar;101,6;+1,5;+0,6\n2021;März;102,1;+1,8;+0,5\n2021;April;102,4;+2,0;+0,3\n2021;Mai;102,6;+2,2;+0,2\n2021;Juni;102,9;+2,4;+0,3\n2021;Juli;103,4;+3,7;+0,5\n2021;August;103,5;+3,8;+0,1\n2021;September;103,8;+4,1;+0,3\n2021;Oktober;104,3;+4,4;+0,5\n2021;November;104,5;+4,8;+0,2\n2021;Dezember;104,7;+4,9;+0,2\n2022;Januar;105,2;+4,2;+0,5\n2022;Februar;106,0;+4,3;+0,8\n2022;März;108,1;+5,9;+2,0\n2022;April;108,8;+6,3;+0,6\n2022;Mai;109,8;+7,0;+0,9\n2022;Juni;109,8;+6,7;-\n2022;Juli;110,3;+6,7;+0,5\n2022;August;110,7;+7,0;+0,4\n2022;September;112,7;+8,6;+1,8\n2022;Oktober;113,5;+8,8;+0,7\n2022;November;113,7;+8,8;+0,2\n2022;Dezember;113,2;+8,1;-0,4\n2023;Januar;114,3;+8,7;+1,0\n2023;Februar;115,2;+8,7;+0,8\n2023;März;116,1;+7,4;+0,8\n2023;April;116,6;+7,2;+0,4\n2023;Mai;116,5;+6,1;-0,1\n2023;Juni;116,8;+6,4;+0,3\n2023;Juli;117,1;+6,2;+0,3\n2023;August;117,5;+6,1;+0,3\n2023;September;117,8;+4,5;+0,3\n2023;Oktober;117,8;+3,8;-\n2023;November;117,3;+3,2;-0,4\n2023;Dezember;117,4;+3,7;+0,1\n2024;Januar;117,6;+2,9;+0,2\n2024;Februar;118,1;+2,5;+0,4\n2024;März;...;...;...\n2024;April;...;...;...\n2024;Mai;...;...;...\n2024;Juni;...;...;...\n2024;Juli;...;...;...\n2024;August;...;...;...\n2024;September;...;...;...\n2024;Oktober;...;...;...\n2024;November;...;...;...\n2024;Dezember;...;...;...\n__________\n© Statistisches Bundesamt (Destatis), 2024\nStand: 08.04.2024 / 00:39:55\n",
+    "Structure": {
+      "Head": {
+        "Code": "61111",
+        "Content": "Verbraucherpreisindex für Deutschland",
+        "Type": "Statistik",
+        "Values": null,
+        "Selected": null,
+        "Structure": [
+          {
+            "Code": "DINSG",
+            "Content": "Deutschland insgesamt",
+            "Type": "Merkmal",
+            "Values": "1",
+            "Selected": "1",
+            "Structure": null,
+            "Updated": "see parent"
+          }
+        ],
+        "Updated": "see parent"
+      },
+      "Columns": [
+        {
+          "Code": "PREIS1",
+          "Content": "Verbraucherpreisindex",
+          "Type": "Merkmal",
+          "Values": null,
+          "Selected": null,
+          "Structure": null,
+          "Updated": "see parent"
+        },
+        {
+          "Code": "PREIS1",
+          "Content": "Verbraucherpreisindex",
+          "Type": "Merkmal",
+          "Values": null,
+          "Selected": null,
+          "Structure": null,
+          "Updated": "see parent"
+        },
+        {
+          "Code": "PREIS1",
+          "Content": "Verbraucherpreisindex",
+          "Type": "Merkmal",
+          "Values": null,
+          "Selected": null,
+          "Structure": null,
+          "Updated": "see parent"
+        }
+      ],
+      "Rows": [
+        {
+          "Code": "JAHR",
+          "Content": "Jahr",
+          "Type": "Merkmal",
+          "Values": "0",
+          "Selected": "0",
+          "Structure": [
+            {
+              "Code": "MONAT",
+              "Content": "Monate",
+              "Type": "Merkmal",
+              "Values": "12",
+              "Selected": "12",
+              "Structure": null,
+              "Updated": "see parent"
+            }
+          ],
+          "Updated": "see parent"
+        }
+      ]
+    }
+  }
+}

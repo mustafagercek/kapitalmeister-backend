@@ -1,0 +1,442 @@
+id;name
+CC13-01;Nahrungsmittel und alkoholfreie Getränke
+CC13-011;Nahrungsmittel
+CC13-0111;Brot und Getreideerzeugnisse
+CC13-01111;Reis, einschließlich Reiszubereitungen
+CC13-01112;Mehl und andere Getreideerzeugnisse
+CC13-01113;Brot und Brötchen
+CC13-01114;Andere Backwaren
+CC13-01115;Pizza, Quiches oder Ähnliches
+CC13-01116;Teigwaren
+CC13-01117;Frühstückszubereitungen
+CC13-01118;Andere Getreideprodukte
+CC13-0112;Fleisch und Fleischwaren
+CC13-01121;Rind- und Kalbfleisch
+CC13-01122;Schweinefleisch
+CC13-01123;Lamm- und Schaffleisch, Ziegenfleisch
+CC13-01124;Geflügelfleisch
+CC13-01125;Andere Fleischprodukte
+CC13-01126;Leber oder andere Innereien
+CC13-01127;Fleisch- und Wurstwaren
+CC13-01128;Anderes Fleisch, verarbeitet und zubereitet
+CC13-0113;Fisch, Fischwaren und Meeresfrüchte
+CC13-01131;Fische und Fischfilets, frisch oder gekühlt
+CC13-01132;Fische und Fischfilets, tiefgefroren
+CC13-01133;Meeresfrüchte, frisch oder gekühlt
+CC13-01134;Tiefgefrorene Meeresfrüchte
+CC13-01135;Fisch, getrocknet, geräuchert oder gesalzen
+CC13-01136;Konserven und andere Zubereitungen von Fisch
+CC13-0114;Molkereiprodukte und Eier
+CC13-01141;Vollmilch
+CC13-01142;Teilentrahmte Milch
+CC13-01143;Kondensierte Milch
+CC13-01144;Joghurt
+CC13-01145;Käse und Quark
+CC13-01146;Andere Milchprodukte
+CC13-01147;Eier
+CC13-0115;Speisefette und Speiseöle
+CC13-01151;Butter
+CC13-01152;Margarine oder Pflanzenfett
+CC13-01153;Olivenöl
+CC13-01154;Sonnenblumenöl, Rapsöl oder Ähnliches
+CC13-01155;Schmalz oder anderes tierisches Speisefett
+CC13-0116;Obst
+CC13-01161;Obst, frisch oder gekühlt
+CC13-01162;Tiefgefrorenes Obst
+CC13-01163;Trockenobst, Nüsse und Ähnliches
+CC13-01164;Obstkonserven
+CC13-0117;Gemüse
+CC13-01171;Gemüse (ohne Kartoffeln), frisch oder gekühlt
+CC13-01172;Gemüse (ohne Kartoffeln), tiefgefroren
+CC13-01173;Trockengemüse und konserviertes Gemüse
+CC13-01174;Kartoffeln, frisch, gekühlt und verarbeitet
+CC13-01175;Chips und -sticks
+CC13-0118;Zucker, Marmelade, Honig und andere Süßwaren
+CC13-01181;Zucker
+CC13-01182;Konfitüre, Marmelade, Honig und Ähnliches
+CC13-01183;Schokoladen
+CC13-01184;Süßwaren
+CC13-01185;Speiseeis
+CC13-01186;Süßstoffe und andere Süßungsmittel
+CC13-0119;Nahrungsmittel, a.n.g.
+CC13-01191;Soßen, Würzen und Würzmittel
+CC13-01192;Speisesalz, Küchenkräuter und Gewürze
+CC13-01193;Säuglings- und Kleinkindernahrung
+CC13-01194;Fertiggerichte, a.n.g.
+CC13-01199;Suppen und andere Nahrungsmittelzubereitungen
+CC13-012;Alkoholfreie Getränke
+CC13-0121;Kaffee, Tee und Kakao
+CC13-01211;Kaffee und Ähnliches
+CC13-01212;Tee und teeähnliche Erzeugnisse
+CC13-01213;Kakaopulver oder Ähnliches
+CC13-0122;Mineralwasser, Limonaden und Säfte
+CC13-01221;Mineralwasser
+CC13-01222;Erfrischungsgetränke (ohne Mineralwasser)
+CC13-01223;Frucht- und Gemüsesäfte
+CC13-02;Alkoholische Getränke und Tabakwaren
+CC13-021;Alkoholische Getränke
+CC13-0211;Spirituosen
+CC13-02111;Liköre und andere Spirituosen
+CC13-02112;Erfrischungsmixgetränk unter 6% Alkoholgehalt
+CC13-0212;Wein
+CC13-02121;Traubenwein
+CC13-02122;Kernobstwein oder anderer Fruchtwein
+CC13-02123;Wein mit mehr als 15% Alkoholgehalt
+CC13-02124;Andere weinhaltige Getränke
+CC13-0213;Bier
+CC13-02131;Pils, Lager, Schwarzbier o.a. untergäriges Bier
+CC13-02132;Weizenbier, Altbier oder anderes obergäriges Bier
+CC13-02133;Alkoholfreies Bier, Malzbier oder Ähnliches
+CC13-02134;Biermischgetränk
+CC13-022;Tabakwaren
+CC13-0220;Tabakwaren
+CC13-02201;Zigaretten
+CC13-02202;Zigarren und Zigarillos
+CC13-02203;Tabak, Liquid oder Ähnliches für E-Zigaretten
+CC13-03;Bekleidung und Schuhe
+CC13-031;Bekleidung
+CC13-0311;Bekleidungsstoffe
+CC13-03110;Bekleidungsstoffe
+CC13-0312;Bekleidungsartikel
+CC13-03121;Bekleidung für Herren
+CC13-03122;Bekleidung für Damen
+CC13-03123;Bekleidung für Kinder
+CC13-0313;Andere Bekleidungsartikel und Bekleidungszubehör
+CC13-03131;Andere Bekleidungsartikel
+CC13-03132;Bekleidungszubehör
+CC13-0314;Chem. Reinigung u.a. Dienstl. für Bekleidung
+CC13-03141;Chem. Reinigung, Waschen und Bügeln von Bekleidung
+CC13-03142;Änderung und Reparatur von Bekleidung
+CC13-032;Schuhe
+CC13-0321;Schuhe und Schuhzubehör
+CC13-03211;Schuhe für Herren
+CC13-03212;Schuhe für Damen
+CC13-03213;Schuhe für Kinder
+CC13-0322;Reparatur von Schuhen
+CC13-03220;Schuhreparatur
+CC13-04;Wohnung, Wasser, Strom, Gas und andere Brennstoffe
+CC13-041;Tatsächliche Wohnungsmiete
+CC13-0411;Tatsächliche Nettokaltmiete
+CC13-04110;Tatsächliche Nettokaltmiete
+CC13-0412;Andere Mieten
+CC13-04122;Garagen- und andere Mieten
+CC13-042;Unterstellte Nettokaltmiete
+CC13-0421;Unterstellte Nettokaltmiete
+CC13-04210;Unterstellte Nettokaltmiete
+CC13-043;Instandhaltung und Reparatur von Wohnung/Wohnhaus
+CC13-0431;Erzeugnisse für Instandhaltung u. Rep. der Wohnung
+CC13-04310;Erzeugnisse für Instandhaltung u. Rep. der Whg.
+CC13-0432;Dienstl. für Instandhaltung u. Rep. der Wohnung
+CC13-04321;Arbeiten an Gas-, Wasser- und Entwässerungsanlagen
+CC13-04322;Elektrikerarbeiten
+CC13-04323;Arbeiten an Heizungs- und Wassererwärmungsanlagen
+CC13-04324;Arbeiten von Malern oder Tapezierern
+CC13-04325;Tischlerarbeiten
+CC13-04329;Kleinere Dienstleistungen von anderen Handwerkern
+CC13-044;Wasserversorgung u.a. Dienstl. für die Wohnung
+CC13-0441;Wasserversorgung
+CC13-04410;Wasserversorgung
+CC13-0442;Müllabfuhr
+CC13-04420;Müllabfuhr
+CC13-0443;Abwasserentsorgung
+CC13-04430;Abwasserentsorgung
+CC13-0444;Andere Dienstleistungen für die Wohnung, a.n.g.
+CC13-04441;Grundsteuer, Dienstl. für Gartenpflege u.Ä.
+CC13-04449;Schornstein-, Bürgersteig- und Straßenreinigung
+CC13-045;Strom, Gas und andere Brennstoffe
+CC13-0451;Strom
+CC13-04510;Strom
+CC13-0452;Gas, einschließlich Betriebskosten
+CC13-04521;Erdgas, einschließlich Betriebskosten
+CC13-04522;Flüssiggas, Füllung eines Tankbehälters
+CC13-0453;Heizöl, einschließlich Betriebskosten
+CC13-04530;Heizöl, einschließlich Betriebskosten
+CC13-0454;Feste Brennstoffe
+CC13-04541;Kohlebriketts
+CC13-04549;Brennholz, Holzpellets o.a. feste Brennstoffe
+CC13-0455;Fernwärme u.A.
+CC13-04550;Fernwärme und Ähnliches
+CC13-05;Möbel, Leuchten, Geräte u.a. Haushaltszubehör
+CC13-051;Möbel, Leuchten, Teppiche und andere Bodenbeläge
+CC13-0511;Möbel und Leuchten
+CC13-05111;Wohnmöbel
+CC13-05112;Gartenmöbel oder Campingmöbel
+CC13-05113;Beleuchtung
+CC13-05119;Andere Möbel und Einrichtungsgegenstände
+CC13-0512;Teppiche und andere elastische Bodenbeläge
+CC13-05121;Teppiche
+CC13-05122;Linoleum oder anderer elastischer Bodenbelag
+CC13-05123;Verlegen und Fixieren von elastischen Bodenbelägen
+CC13-0513;Reparatur v. Möbeln, Leuchten, elast. Bodenbelägen
+CC13-05130;Reparatur v. Möbeln, Leuchten, elast. Bodenbelägen
+CC13-052;Heimtextilien
+CC13-0520;Heimtextilien
+CC13-05201;Gardinen u.Vorhänge, Gardinen-, Möbel- u.ä. Stoffe
+CC13-05202;Bettwaren und Bettwäsche
+CC13-05203;Tisch- und Badezimmerwäsche
+CC13-05209;Andere Heimtextilien
+CC13-053;Haushaltsgeräte
+CC13-0531;Elektrische und andere Haushaltsgroßgeräte
+CC13-05311;Kühl- und Gefriergeräte
+CC13-05312;Waschmaschinen, Geschirrspülmaschinen u.Ä.
+CC13-05313;Kochgeräte
+CC13-05314;Raumheizgeräte und Klimageräte
+CC13-05315;Staubsauger und andere Reinigungsgeräte
+CC13-05319;Nähmaschine und andere Haushaltsgroßgeräte
+CC13-0532;Elektrische Kleingeräte für den Haushalt
+CC13-05321;Elektrisches Rührgerät, Mixgerät oder Ähnliches
+CC13-05322;Kaffee-, Teemaschinen und ähnliche Kleingeräte
+CC13-05323;Bügeleisen
+CC13-05324;Toaster oder Grillgerät
+CC13-05329;Eierkocher und andere elektrische Kleingeräte
+CC13-0533;Reparatur von Haushaltsgeräten
+CC13-05330;Reparatur von Haushaltsgeräten
+CC13-054;Glaswaren, Tafelgeschirr und andere Gebrauchsgüter
+CC13-0540;Glaswaren, Tafelgeschirr und andere Gebrauchsgüter
+CC13-05401;Tafelgeschirr, Glas- und Kristallwaren
+CC13-05402;Bestecke, Schneidwaren und Silberwaren
+CC13-05403;Küchengeräte und Haushaltsgeräte, nicht elektrisch
+CC13-055;Werkzeuge und Geräte für Haus und Garten
+CC13-0551;Motorbetr. Großwerkzeuge u.Ä. für Haus und Garten
+CC13-05511;Motorbetriebene Großwerkzeuge und Großgeräte
+CC13-05512;Miete von motorbetriebenem Großwerkzeug o. -gerät
+CC13-0552;Gartengeräte, Handwerkzeuge u.a. Gebrauchsgüter
+CC13-05521;Nichtelektrische Kleinwerkzeuge
+CC13-05522;Andere Gebrauchsgüter für die Haushaltsführung
+CC13-056;Waren u. Dienstleistungen für die Haushaltsführung
+CC13-0561;Verbrauchsgüter für die Haushaltsführung
+CC13-05611;Reinigungs- und Pflegemittel
+CC13-05612;Andere Verbrauchsgüter
+CC13-0562;Dienstl. von Hauspersonal u.a. häusliche Dienste
+CC13-05621;Dienstleistungen von Hauspersonal
+CC13-05622;Reinigung von Teppichen, Haushaltswäsche o.Ä.
+CC13-05629;Andere Dienstleistungen für die Haushaltsführung
+CC13-06;Gesundheit
+CC13-061;Medizinische Erzeugnisse, Geräte und Ausrüstungen
+CC13-0611;Pharmazeutische Erzeugnisse
+CC13-06110;Pharmazeutische Erzeugnisse
+CC13-0612;Andere medizinische Erzeugnisse
+CC13-06121;Schwangerschaftstests, Kondome und Ähnliches
+CC13-06129;Andere medizinische Erzeugnisse, a.n.g.
+CC13-0613;Therapeutische Geräte und Ausrüstungen
+CC13-06131;Brillen und Kontaktlinsen
+CC13-06132;Hörhilfen
+CC13-06133;Rep. v. therapeutischen Geräten u. Ausrüstungen
+CC13-06139;Andere therapeutische Geräte und Ausrüstungen
+CC13-062;Ambulante Gesundheitsdienstleistungen
+CC13-0621;Ärztliche Dienstleistungen
+CC13-06211;Ärztliche Dienstleistungen der Allgemeinmedizin
+CC13-06212;Ärztliche Dienstleistungen der Fachmedizin
+CC13-0622;Zahnärztliche Dienstleistungen
+CC13-06220;Zahnärztliche Dienstleistungen
+CC13-0623;Dienstl. nichtärztlicher Gesundheitsberufe
+CC13-06231;Laborleistungen und Strahlendiagnostik
+CC13-06232;Med. Bäder, Physiotherapie, Krankentransporte u.Ä.
+CC13-06239;Andere Dienstl. nichtärztlicher Gesundheitsberufe
+CC13-063;Stationäre Gesundheitsdienstleistungen
+CC13-0630;Stationäre Gesundheitsdienstleistungen
+CC13-06300;Stationäre Gesundheitsdienstleistungen
+CC13-07;Verkehr
+CC13-071;Kauf von Fahrzeugen
+CC13-0711;Personenkraftwagen (ohne Wohnmobile)
+CC13-07111;Neuer Pkw
+CC13-07112;Gebrauchter Pkw
+CC13-0712;Krafträder
+CC13-07120;Krafträder
+CC13-0713;Fahrräder
+CC13-07130;Fahrrad
+CC13-072;Waren und Dienstleistungen für Fahrzeuge
+CC13-0721;Ersatzteile und Zubehör für Fahrzeuge
+CC13-07211;Reifen
+CC13-07212;Andere Einzel- und Ersatzteile für Fahrzeuge
+CC13-07213;Zubehör für Fahrzeuge
+CC13-0722;Kraft- und Schmierstoffe für Fahrzeuge
+CC13-07221;Dieselkraftstoff
+CC13-07222;Superbenzin
+CC13-07223;Autogas und andere Kraftstoffe
+CC13-07224;Motorenöl und andere Schmierstoffe
+CC13-0723;Wartung und Reparatur von Fahrzeugen
+CC13-07230;Wartung und Reparatur von Fahrzeugen
+CC13-0724;Andere Dienstleistungen für Fahrzeuge
+CC13-07241;Miete von Fahrzeugen, Garagen/Stellplätzen
+CC13-07242;Straßenbenutzungsgebühren und Parkgebühren
+CC13-07243;Fahrschule, Kfz-Untersuchung, Kfz-Steuer u.Ä.
+CC13-073;Personen- und Güterbeförderung
+CC13-0731;Personenbeförderung im Schienenverkehr
+CC13-07311;Bahnticket
+CC13-0732;Personenbeförderung im Straßenverkehr
+CC13-07321;Fahrkarte für Fernbus
+CC13-07322;Taxifahrt und Fahrgemeinschaften
+CC13-0733;Personenbeförderung im Luftverkehr
+CC13-07331;Inlandsflüge
+CC13-07332;Internationale Flüge
+CC13-0734;Personenbeförderung im Schiffsverkehr
+CC13-07341;Hochseeschifffahrt oder Küstenschifffahrt
+CC13-07342;Binnenschifffahrt
+CC13-0735;Kombinierte Personenbeförderungsleistungen
+CC13-07350;Kombinierte Personenbeförderungsleistungen
+CC13-0736;Ausgaben für andere Verkehrsdienstleistungen
+CC13-07362;Umzüge und Lagerungsleistungen
+CC13-08;Post und Telekommunikation
+CC13-081;Brief- und Paketdienstleistungen
+CC13-0810;Brief- und Paketdienstleistungen
+CC13-08101;Briefdienstleistungen
+CC13-08109;Paketdienstleistungen
+CC13-082;Telefone und andere Geräte für die Kommunikation
+CC13-0820;Telefone und andere Geräte für die Kommunikation
+CC13-08201;Festnetztelefon
+CC13-08202;Mobiltelefon ohne Vertrag
+CC13-08203;Smartwatch, Fitness Tracker oder Ähnliches
+CC13-08204;Reparatur von Telefonen
+CC13-083;Telekommunikationsdienstleistungen
+CC13-0830;Telekommunikationsdienstleistungen
+CC13-08301;Drahtgebundene Telekommunikationsdienstleistungen
+CC13-08302;Drahtlose Telekommunikationsdienstleistungen
+CC13-08303;Zugang zu Onlinediensten und zum Internet
+CC13-08304;Kombinierte Telekommunikationsdienstleistungen
+CC13-09;Freizeit, Unterhaltung und Kultur
+CC13-091;Audio-, Foto-, IT-Geräte und Zubehör
+CC13-0911;Rundfunk-, Fernsehgeräte und Ähnliches
+CC13-09111;Empfangs-, Wiedergabe- u.a. Geräte für Ton
+CC13-09112;Fernsehgerät, SAT-Anlage oder Ähnliches
+CC13-09113;MP3-Player oder Ähnliches
+CC13-09119;Kopfhörer, E-Book-Reader oder Ähnliches
+CC13-0912;Foto- u. Filmausrüstung, opt. Geräte u. Zubehör
+CC13-09121;Kameras
+CC13-09122;Zoomobjektiv oder Ähnliches
+CC13-09123;Fernglas oder andere optische Geräte
+CC13-0913;Informationsverarbeitungsgeräte
+CC13-09131;Personal-Computer
+CC13-09132;Zubehör zu Informationsverarbeitungsgeräten
+CC13-09133;Betriebssystem oder andere Computersoftware
+CC13-0914;Ton-, Bild- und andere Datenträger
+CC13-09141;Ton-, Bild- und andere Datenträger, bespielt
+CC13-09142;CD's, DVD's und Ähnliches, unbespielt
+CC13-09149;Speicherkarte, USB-Stick oder Ähnliches
+CC13-0915;Reparatur an Audio-, Foto-, IT-Geräten und Zubehör
+CC13-09150;Reparatur an Unterhaltungselektronik
+CC13-092;Andere Gebrauchsgüter für Freizeit und Kultur
+CC13-0921;Langlebige Gebrauchsgüter für Freizeit im Freien
+CC13-09211;Wohnmobile, Campinganhänger und andere Anhänger
+CC13-09213;Boote, Außenbordmotoren und Ausrüstungen für Boote
+CC13-09214;Pferdegeschirr, Zügel, Sattel oder Ähnliches
+CC13-09215;Andere Gebrauchsgüter für Freizeit im Freien
+CC13-0922;Langlebige Gebrauchsgüter für Freizeit in Räumen
+CC13-09221;Musikinstrumente
+CC13-0923;Rep. an Gebrauchsgütern für Freizeit und Kultur
+CC13-09230;Rep. an Gebrauchsgütern für Freizeit und Kultur
+CC13-093;Andere Güter für Freizeit und Garten, Haustiere
+CC13-0931;Spiele, Spielzeug und Hobbywaren
+CC13-09311;Spiel- und Hobbywaren
+CC13-09312;Anderes Spielzeug und Festartikel
+CC13-0932;Güter für Sport, Camping und Erholung
+CC13-09321;Sportartikel
+CC13-09322;Ausrüstungen für Camping und Erholung im Freien
+CC13-0933;Gartenerzeugnisse, Pflanzen und Blumen
+CC13-09331;Gartenerzeugnisse
+CC13-09332;Pflanzen und Blumen
+CC13-0934;Haustiere, einschließlich Ge- und Verbrauchsgüter
+CC13-09341;Wellensittich, Zierfisch oder anderes Haustier
+CC13-09342;Güter für Haustiere
+CC13-0935;Veterinär- u.a. Dienstleistungen für Haustiere
+CC13-09350;Veterinär- u.a. Dienstleistungen für Haustiere
+CC13-094;Freizeit- und Kulturdienstleistungen
+CC13-0941;Sport-, Freizeit- und Erholungsdienstleistungen
+CC13-09411;Besuch von Sport- und Freizeitveranstaltungen
+CC13-09412;Freizeit- und Sportdienstleistungen
+CC13-0942;Kulturdienstleistungen
+CC13-09421;Besuch von Kino, Theater, Konzert, Zirkus u.Ä.
+CC13-09422;Museumsbesuch, Zoobesuch oder Ähnliches
+CC13-09423;Rundfunk- und Fernsehgebühren
+CC13-09425;Fotodienstleistungen
+CC13-0943;Glücksspiele
+CC13-09430;Entgelt für Glücksspiele
+CC13-095;Druckerzeugnisse, Schreib- und Zeichenwaren
+CC13-0951;Bücher
+CC13-09511;Unterhaltungsliteratur
+CC13-09512;Schulbuch oder Lehrbuch
+CC13-09513;Andere Bücher
+CC13-09514;E-Book-Download
+CC13-0952;Zeitungen und Zeitschriften
+CC13-09521;Tages- und Wochenzeitungen
+CC13-09522;Zeitschriften und periodische Druckschriften
+CC13-0953;Andere Druckerzeugnisse
+CC13-09530;Andere Druckerzeugnisse
+CC13-0954;Schreibwaren und Zeichenmaterialien
+CC13-09541;Papierprodukte
+CC13-09549;Anderes Schreib- und Zeichenmaterial
+CC13-096;Pauschalreisen
+CC13-0960;Pauschalreisen
+CC13-09601;Pauschalreise im Inland
+CC13-09602;Pauschalreise ins Ausland
+CC13-10;Bildungswesen
+CC13-101;Bildungsdienstl. des Elementar- und Primarbereichs
+CC13-1010;Bildungsdienstl. des Elementar- und Primarbereichs
+CC13-10101;Dienstleistungen des Elementarbereichs
+CC13-10102;Entgelt für Grundschule oder Klasse 1 - 4
+CC13-102;Bildungsdienstleistungen des Sekundarbereichs
+CC13-1020;Bildungsdienstleistungen des Sekundarbereichs
+CC13-10200;Entgelt für weiterführende Schule
+CC13-104;Bildungsdienstleistungen des Tertiärbereichs
+CC13-1040;Bildungsdienstleistungen des Tertiärbereichs
+CC13-10400;Studiengebühr und/oder Immatrikulationsgebühr
+CC13-105;Bildungsdienstl. nicht einstufbarer Einrichtungen
+CC13-1050;Bildungsdienstl. nicht einstufbarer Einrichtungen
+CC13-10500;Bildungsdienstl. nicht einstufbarer Einrichtungen
+CC13-11;Gaststätten- und Beherbergungsdienstleistungen
+CC13-111;Gaststättendienstleistungen
+CC13-1111;Restaurants, Cafes, Straßenverkauf und Ähnliches
+CC13-11111;Speisen und Getränke in Restaurant, Cafe, Bar u.Ä.
+CC13-11112;Speisen und Getränke in Fastfoodrestaurants u.Ä.
+CC13-1112;Bewirtungsleistungen von Kantinen und Mensen
+CC13-11120;Bewirtungsleistungen von Kantinen und Mensen
+CC13-112;Übernachtungen
+CC13-1120;Übernachtungen
+CC13-11201;Übernachtungen in Hotels, Gasthöfen und Ähnlichem
+CC13-11202;Übernachtungen in Feriendörfern, Camping u.Ä.
+CC13-11203;Übernachtungen in anderen Unterkünften
+CC13-12;Andere Waren und Dienstleistungen
+CC13-121;Körperpflege
+CC13-1211;Friseurleistungen u.a. Dienstl. für Körperpflege
+CC13-12111;Friseurleistungen für Herren und Kinder
+CC13-12112;Friseurleistungen für Damen
+CC13-12113;Andere Dienstleistungen für die Körperpflege
+CC13-1212;Elektrische Geräte für die Körperpflege
+CC13-12121;Elektrische Geräte für die Körperpflege
+CC13-1213;Andere Artikel u. Erzeugnisse für die Körperpflege
+CC13-12131;Nichtelektr. Gebrauchsgüter für die Körperpflege
+CC13-12132;Verbrauchsgüter für die Körperpflege
+CC13-123;Persönliche Gebrauchsgegenstände, a.n.g.
+CC13-1231;Schmuck und Uhren
+CC13-12311;Schmuck
+CC13-12312;Armband- und andere Uhren
+CC13-12313;Reparatur einer Uhr oder von Schmuck
+CC13-1232;Andere persönliche Gebrauchsgegenstände
+CC13-12321;Reiseartikel und andere Täschnerwaren
+CC13-12322;Ausstattung für Babys
+CC13-12329;Andere persönliche Gebrauchsgegenstände, a.n.g.
+CC13-124;Dienstleistungen sozialer Einrichtungen
+CC13-1240;Dienstleistungen sozialer Einrichtungen
+CC13-12401;Dienstl. Kinderheime, Betreuung nach der Schule
+CC13-12402;Dienstl. Altenwohnheime u.ä. Einrichtungen
+CC13-12403;Dienstl. der häusl. Alten- u. Behindertenpflege
+CC13-125;Versicherungsdienstleistungen
+CC13-1252;Versicherungsdienstleistungen für die Wohnung
+CC13-12520;Beitrag zur Hausratversicherung
+CC13-1253;Versicherungsdienstleistungen für die Gesundheit
+CC13-12532;Dienstl. priv. Unfall- und Krankenversicherungen
+CC13-1254;Versicherungsdienstleistungen für den Verkehr
+CC13-12541;Versicherungsdienstl. für private Verkehrsmittel
+CC13-12542;Versicherungsdienstleistungen für Reise und Gepäck
+CC13-1255;Andere Versicherungsdienstleistungen
+CC13-12550;Andere Versicherungsdienstleistungen
+CC13-126;Finanzdienstleistungen, a.n.g.
+CC13-1262;Andere Finanzdienstleistungen, a.n.g.
+CC13-12621;Bank- und Sparkassengebühren und Ähnliches
+CC13-12622;Gebühren für Anlageberatung, Steuerberatung u.Ä.
+CC13-127;Andere Dienstleistungen, a.n.g.
+CC13-1270;Andere Dienstleistungen, a.n.g.
+CC13-12701;Verwaltungsgebühren
+CC13-12702;Rechtsberatung, Rechtsanwalts- und Notargebühren
+CC13-12703;Bestattungsleistungen und Friedhofsgebühr
+CC13-12704;Andere Gebühren und Dienstleistungen

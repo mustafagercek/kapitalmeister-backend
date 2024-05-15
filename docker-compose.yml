@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    image: muki1992/kapitalmeister-backend:latest
+    build:
+      context: .
+    container_name: kapitalmeister-backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - app-data:/app/data
+      - ./build/libs:/app/build/libs
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/kapitalmeister-db
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - GENESIS_PW=Nicetoapp92-
+      - GENESIS_USERNAME=DEK096S3OV
+      - spring.profiles.active=dev
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=kapitalmeister-db
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  app-data:
+  db-data:

@@ -1,0 +1,48 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+	id 'org.springframework.boot' version '3.2.4'
+	id 'io.spring.dependency-management' version '1.1.4'
+	id 'org.jetbrains.kotlin.jvm' version '1.9.23'
+	id 'org.jetbrains.kotlin.plugin.spring' version '1.9.23'
+}
+
+group = 'de.nicetoapp'
+version = '1.0'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+	implementation 'org.jetbrains.kotlin:kotlin-reflect'
+	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core'
+	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-reactive'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.mockito:mockito-core:4.5.1'
+	testImplementation 'org.mockito:mockito-junit-jupiter:4.5.1'
+	testImplementation 'org.mockito.kotlin:mockito-kotlin:4.0.0'
+	testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test'
+
+}
+
+tasks.withType(KotlinCompile) {
+	kotlinOptions {
+		freeCompilerArgs += '-Xjsr305=strict'
+		jvmTarget = '17'
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
