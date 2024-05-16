@@ -77,19 +77,18 @@ class UpdateDatabaseTask(
 
                 if (databaseUpdater.isUpdateNeeded()) {
                     println("Database update needed for $seedDataSource")
-                    coroutineScope.launch {
-                        if (databaseUpdater.updateDatabase()) {
-                            println("Update was successful for $seedDataSource")
-                            val updateLog = DatabaseUpdateLog(
-                                logTimestamp = LocalDateTime.now(),
-                                seedDataSource = seedDataSource,
-                                status = DatabaseUpdateLog.Status.SUCCESS
-                            )
-                            logRepository.save(updateLog)
-                        } else {
-                            println("Update failed for $seedDataSource")
-                        }
+                    if (databaseUpdater.updateDatabase()) {
+                        println("Update was successful for $seedDataSource")
+                        val updateLog = DatabaseUpdateLog(
+                            logTimestamp = LocalDateTime.now(),
+                            seedDataSource = seedDataSource,
+                            status = DatabaseUpdateLog.Status.SUCCESS
+                        )
+                        logRepository.save(updateLog)
+                    } else {
+                        println("Update failed for $seedDataSource")
                     }
+
                 }
             }
         }

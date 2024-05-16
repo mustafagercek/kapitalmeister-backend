@@ -7,6 +7,7 @@ import de.nicetoapp.kapitalmeisterbackend.repository.cpi.GermanCpiCategoryReposi
 import java.io.BufferedReader
 import java.io.FileNotFoundException
 import java.io.FileReader
+import java.io.InputStreamReader
 import java.nio.file.Files
 import java.nio.file.Paths
 
@@ -18,39 +19,40 @@ class GermanCpiCategoryUpdater(
 
     override suspend fun updateDatabase(): Boolean {
         try {
-            val filePath = Paths.get("src/main/resources/static/cpi/categories/german_cpi_categories.csv")
+            val classLoader = javaClass.classLoader
+            val resource = classLoader.getResource("static/cpi/categories/german_cpi_categories.csv")
+                ?: throw FileNotFoundException("File not found in resources: static/cpi/categories/german_cpi_categories.csv")
+
             val cpiCategories = mutableListOf<GermanCpiCategory>()
             val categoryMap = mutableMapOf<String, GermanCpiCategory>()
 
-            if (Files.exists(filePath)) {
-                BufferedReader(FileReader(filePath.toFile())).use { reader ->
-                    val header = reader.readLine()
-                    val headerColumns = header.split(";")
-                    val idIndex = headerColumns.indexOf("id")
-                    val nameIndex = headerColumns.indexOf("name")
+            BufferedReader(InputStreamReader(resource.openStream())).use { reader ->
+                val header = reader.readLine()
+                val headerColumns = header.split(";")
+                val idIndex = headerColumns.indexOf("id")
+                val nameIndex = headerColumns.indexOf("name")
 
-                    reader.forEachLine { line ->
-                        val columns = line.split(";")
-                        val id = columns[idIndex]
-                        val name = columns[nameIndex]
-                        val parentId = if (id.count { it == '-' } == 2) null else id.dropLast(1)
-                        val parentCategory: GermanCpiCategory? = if (parentId != null) categoryMap[parentId] else null
+                reader.forEachLine { line ->
+                    val columns = line.split(";")
+                    val id = columns[idIndex]
+                    val name = columns[nameIndex]
+                    val parentId = if (id.count { it == '-' } == 2) null else id.dropLast(1)
+                    val parentCategory: GermanCpiCategory? = if (parentId != null) categoryMap[parentId] else null
 
-                        val category = GermanCpiCategory(id, categoryName = name, parentCategory = parentCategory)
-                        categoryMap[id] = category
-                        cpiCategories.add(category)
-                    }
+                    val category = GermanCpiCategory(id, categoryName = name, parentCategory = parentCategory)
+                    categoryMap[id] = category
+                    cpiCategories.add(category)
                 }
-            } else {
-                throw FileNotFoundException("File not found at $filePath")
             }
-            val sortedCategories = cpiCategories.sortedBy { it.id.length }
 
-            germanCpiCategoryRepository.saveAll(sortedCategories)
-            return true
+            germanCpiCategoryRepository.saveAll(cpiCategories)
+        } catch (e: FileNotFoundException) {
+            println("Update failed for GERMAN_CATEGORY: ${e.message}")
+            return false
         } catch (e: Exception) {
-            // Ignored atm
+            println("Update failed for GERMAN_CATEGORY: ${e.message}")
+            return false
         }
-        return false
+        return true
     }
 }

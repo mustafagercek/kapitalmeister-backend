@@ -3,7 +3,10 @@ package de.nicetoapp.kapitalmeisterbackend.controller
 import de.nicetoapp.kapitalmeisterbackend.model.common.SeedDataSource
 import de.nicetoapp.kapitalmeisterbackend.model.entity.cpi.german.GermanMonthlyCategorizedCpi
 import de.nicetoapp.kapitalmeisterbackend.model.entity.cpi.german.GermanYearlyCpi
-import de.nicetoapp.kapitalmeisterbackend.model.response.GermanMonthlyCpiResponse
+import de.nicetoapp.kapitalmeisterbackend.model.response.cpi.GermanCategorizedMonthlyCpiListResponse
+import de.nicetoapp.kapitalmeisterbackend.model.response.cpi.GermanCategorizedMonthlyCpiResponse
+import de.nicetoapp.kapitalmeisterbackend.model.response.cpi.GermanCategorizedMonthlyCpiResponseFull
+import de.nicetoapp.kapitalmeisterbackend.model.response.cpi.GermanMonthlyCpiResponse
 import de.nicetoapp.kapitalmeisterbackend.repository.DatabaseUpdateLogRepository
 import de.nicetoapp.kapitalmeisterbackend.repository.cpi.GermanMonthlyCategorizedCpiRepository
 import de.nicetoapp.kapitalmeisterbackend.repository.cpi.GermanMonthlyCpiRepository
@@ -33,9 +36,50 @@ class GermanCpiController(
         return yearlyCpiRepository.findAll()
     }
 
-    @GetMapping("/monthly/categorized")
-    fun getAllMonthlyCategorized(): List<GermanMonthlyCategorizedCpi> {
-        return monthlyCategorizedCpiRepository.findAll()
+    @GetMapping("/monthly/categories/latest")
+    fun getLatestMonthlyCategories(): GermanCategorizedMonthlyCpiListResponse {
+        val sort = Sort.by(Sort.Order.asc("germanCpiCategory"), Sort.Order.asc("year"), Sort.Order.asc("month"))
+        val lastUpdateLog = updateLogRepository.findLatestBySource(SeedDataSource.GERMAN_MONTHLY_CPI)
+
+        val latestYear = monthlyCategorizedCpiRepository.findMaxYear()
+        val latestMonth = monthlyCategorizedCpiRepository.findMaxMonthByYearWithValue(latestYear)
+        val cpiList =
+            monthlyCategorizedCpiRepository.findByYearAndMonthAndCategoryWithNoParent(latestYear, latestMonth, sort)
+                .map { cpiEntity ->
+                    GermanCategorizedMonthlyCpiResponse(
+                        cpiEntity.year,
+                        cpiEntity.month,
+                        cpiEntity.germanCpiCategory!!.id,
+                        cpiEntity.value,
+                        cpiEntity.previousMonthValue,
+                        cpiEntity.momChange,
+                        cpiEntity.previousYearValue,
+                        cpiEntity.yoyChange,
+                    )
+
+                }
+        return GermanCategorizedMonthlyCpiListResponse(latestYear, latestYear, cpiList, lastUpdateLog?.logTimestamp)
+    }
+
+    @GetMapping("/monthly/categories/latest/full")
+    fun getLatestMonthlyCategoriesFull(
+        @RequestParam(required = true) includeChildren: Boolean = false,
+    ): GermanCategorizedMonthlyCpiListResponse {
+        val sort = Sort.by(Sort.Order.asc("germanCpiCategory"), Sort.Order.asc("year"), Sort.Order.asc("month"))
+        val lastUpdateLog = updateLogRepository.findLatestBySource(SeedDataSource.GERMAN_MONTHLY_CPI)
+        val latestYear = monthlyCategorizedCpiRepository.findMaxYear()
+        val latestMonth = monthlyCategorizedCpiRepository.findMaxMonthByYearWithValue(latestYear)
+        val cpiList =
+            monthlyCategorizedCpiRepository.findByYearAndMonthAndCategoryWithNoParent(latestYear, latestMonth, sort)
+                .map { cpiEntity ->
+                    buildFullMonthlyCategorizedCpiResponse(
+                        cpiEntity,
+                        latestYear,
+                        latestMonth,
+                        sort
+                    )
+                }
+        return GermanCategorizedMonthlyCpiListResponse(latestYear, latestYear, cpiList, lastUpdateLog?.logTimestamp)
     }
 
     @GetMapping("/monthly")
@@ -58,4 +102,28 @@ class GermanCpiController(
             lastUpdate = lastUpdate
         )
     }
+
+    private fun buildFullMonthlyCategorizedCpiResponse(
+        cpiEntity: GermanMonthlyCategorizedCpi,
+        year: Int,
+        month: Int,
+        sort: Sort,
+    ): GermanCategorizedMonthlyCpiResponseFull {
+        val childEntities =
+            monthlyCategorizedCpiRepository.findChildCategories(year, month, cpiEntity.germanCpiCategory!!.id)
+        val childResponses = childEntities.map { buildFullMonthlyCategorizedCpiResponse(it, year, month, sort) }
+
+        return GermanCategorizedMonthlyCpiResponseFull(
+            cpiEntity.year,
+            cpiEntity.month,
+            cpiEntity.germanCpiCategory.id,
+            cpiEntity.value,
+            cpiEntity.previousMonthValue,
+            cpiEntity.momChange,
+            cpiEntity.previousYearValue,
+            cpiEntity.yoyChange,
+            childResponses
+        )
+    }
+
 }
