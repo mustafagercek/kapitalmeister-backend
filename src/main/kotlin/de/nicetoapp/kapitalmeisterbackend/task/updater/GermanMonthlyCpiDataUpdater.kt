@@ -54,6 +54,8 @@ class GermanMonthlyCpiDataUpdater(
                         null
                     }
 
+                    cpiData.previousMonthValue = previousMonthValue
+                    cpiData.previousYearValue = previousYearValue
                     cpiData.momChange = monthOverMonthChange
                     cpiData.yoyChange = yearOverYearChange
                 }

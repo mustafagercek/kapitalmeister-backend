@@ -4,18 +4,18 @@ class GenesisHelper {
 
     companion object {
         val germanMonthMap = mapOf(
-            "Januar" to 1,
-            "Februar" to 2,
-            "März" to 3,
-            "April" to 4,
-            "Mai" to 5,
-            "Juni" to 6,
-            "Juli" to 7,
-            "August" to 8,
-            "September" to 9,
-            "Oktober" to 10,
-            "November" to 11,
-            "Dezember" to 12
+            "Januar" to 0,
+            "Februar" to 1,
+            "März" to 2,
+            "April" to 3,
+            "Mai" to 4,
+            "Juni" to 5,
+            "Juli" to 6,
+            "August" to 7,
+            "September" to 8,
+            "Oktober" to 9,
+            "November" to 10,
+            "Dezember" to 11
         )
     }
 }

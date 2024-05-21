@@ -6,5 +6,5 @@ import org.springframework.stereotype.Component
 @Component
 @ConfigurationProperties(prefix = "general")
 class GeneralProperties {
-    lateinit var seedFilePath: String
+    lateinit var appToken: String
 }

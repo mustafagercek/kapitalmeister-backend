@@ -16,7 +16,9 @@ class GermanMonthlyCpi(
     @Id
     val month: Int = 0,
     val value: Double? = 0.0,
+    var previousMonthValue: Double? = null,
     var momChange: Double? = null,
+    var previousYearValue: Double? = null,
     var yoyChange: Double? = null
 ) {
 
