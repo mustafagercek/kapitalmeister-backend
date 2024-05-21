@@ -1,8 +1,8 @@
 package de.nicetoapp.kapitalmeisterbackend.util
 
-import de.nicetoapp.kapitalmeisterbackend.model.dto.GenesisTableResponse
 import de.nicetoapp.kapitalmeisterbackend.model.common.SeedFile
 import de.nicetoapp.kapitalmeisterbackend.model.common.SeedFileHeader
+import de.nicetoapp.kapitalmeisterbackend.model.dto.GenesisTableResponse
 
 class GenesisContentGenerator(private val genesisResponse: GenesisTableResponse) {
 
@@ -138,7 +138,7 @@ class GenesisContentGenerator(private val genesisResponse: GenesisTableResponse)
             }
 
             else -> {
-                return { line -> true }
+                return { _ -> true }
             }
         }
     }

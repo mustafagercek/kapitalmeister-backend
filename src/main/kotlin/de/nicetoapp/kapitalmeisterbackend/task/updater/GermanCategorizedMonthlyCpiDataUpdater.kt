@@ -36,7 +36,7 @@ class GermanCategorizedMonthlyCpiDataUpdater(
             val groupedByCategory = allCpiData.groupBy { it.germanCpiCategory?.id }
             val updatedCpiData = mutableListOf<GermanMonthlyCategorizedCpi>()
 
-            groupedByCategory.forEach { (categoryId, cpiList) ->
+            groupedByCategory.forEach { (_, cpiList) ->
                 val sortedList = cpiList.sortedWith(compareBy({ it.year }, { it.month }))
 
                 sortedList.forEachIndexed { index, cpiData ->
